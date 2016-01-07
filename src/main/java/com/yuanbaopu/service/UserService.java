@@ -1,9 +1,8 @@
 package com.yuanbaopu.service;
 
-
-import com.yuanbaopu.domain.User;
+import com.yuanbaopu.domain.user.UserDomain;
 
 public interface UserService {
-	User login(String account, String password);
+	UserDomain login(String account, String password);
 
 }
