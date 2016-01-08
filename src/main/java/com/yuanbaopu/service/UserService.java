@@ -1,8 +1,11 @@
 package com.yuanbaopu.service;
 
-import com.yuanbaopu.domain.user.UserDomain;
+import com.github.pagehelper.PageInfo;
+import com.yuanbaopu.reqdomain.UserListDto;
+import com.yuanbaopu.reqdomain.UserSearchNames;
+import com.yuanbaopu.reqdomain.UserTokenDomain;
 
 public interface UserService {
-	UserDomain login(String account, String password);
-
+	UserTokenDomain login(String account, String password);
+	PageInfo<UserListDto> queryUserList(UserSearchNames userSearchNames);
 }

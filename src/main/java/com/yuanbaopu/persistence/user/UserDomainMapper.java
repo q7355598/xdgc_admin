@@ -1,6 +1,9 @@
 package com.yuanbaopu.persistence.user;
 
+import java.util.List;
+
 import com.yuanbaopu.domain.user.UserDomain;
+import com.yuanbaopu.reqdomain.UserSearchNames;
 
 public interface UserDomainMapper {
     int deleteByPrimaryKey(Integer userId);
@@ -15,5 +18,7 @@ public interface UserDomainMapper {
 
     int updateByPrimaryKey(UserDomain record);
     
-    UserDomain login(String account, String password);
+    UserDomain selectByAccount(String account);
+    
+    List<UserDomain> queryUserList(UserSearchNames userSearchNames);
 }
