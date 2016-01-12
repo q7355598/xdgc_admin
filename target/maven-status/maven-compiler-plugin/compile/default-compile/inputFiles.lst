@@ -1,3 +1,4 @@
+F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\common\PageConst.java
 F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\reqdomain\UserTokenDomain.java
 F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\common\utils\MD5.java
 F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\controller\customer\UserController.java
@@ -14,6 +15,5 @@ F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\common\MessageResp.java
 F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\common\XdgcRException.java
 F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\common\utils\JsonUtil.java
 F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\common\CommonRespConst.java
-F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\reqdomain\UserListDto.java
 F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\common\RespCode.java
 F:\workspace\xdgc_admin\src\main\java\com\yuanbaopu\service\impl\UserServiceImpl.java

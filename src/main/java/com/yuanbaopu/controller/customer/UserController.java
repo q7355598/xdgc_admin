@@ -18,7 +18,7 @@ import com.yuanbaopu.common.CommonController;
 import com.yuanbaopu.common.MessageResp;
 import com.yuanbaopu.common.RespMessageEnum;
 import com.yuanbaopu.common.utils.LogInfo;
-import com.yuanbaopu.reqdomain.UserListDto;
+import com.yuanbaopu.domain.user.UserDomain;
 import com.yuanbaopu.reqdomain.UserSearchNames;
 import com.yuanbaopu.reqdomain.UserTokenDomain;
 import com.yuanbaopu.service.UserService;
@@ -66,8 +66,8 @@ public class UserController extends CommonController {
 	public MessageResp queryUserList(String token, UserSearchNames userSearchNames) {
 		logger.info(LogInfo.OPTLOGTPL, token, "查询用户列表");
 		logger.info("userSearchNames={}", LogInfo.toJson(userSearchNames));
-		//PageInfo<UserListDto> userList = userService.queryUserList(userSearchNames);
-		return success();
+		PageInfo<UserDomain> userList = userService.queryUserList(userSearchNames);
+		return success(userList);
 	}
 
 }

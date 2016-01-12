@@ -1,11 +1,33 @@
 package com.yuanbaopu.reqdomain;
 
+import com.yuanbaopu.common.PageConst;
+
 public class UserSearchNames {
 	private String name;
 
     private String email;
 
     private String mobile;
+    
+    private Integer pageNum = PageConst.pageNum;
+    
+    private Integer pageSize = PageConst.pageSize;
+
+	public Integer getPageNum() {
+		return pageNum;
+	}
+
+	public void setPageNum(Integer pageNum) {
+		this.pageNum = pageNum;
+	}
+
+	public Integer getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(Integer pageSize) {
+		this.pageSize = pageSize;
+	}
 
 	public String getName() {
 		return name;
