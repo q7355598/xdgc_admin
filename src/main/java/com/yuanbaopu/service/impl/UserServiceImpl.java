@@ -13,6 +13,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yuanbaopu.common.RespMessageEnum;
 import com.yuanbaopu.common.XdgcRException;
+import com.yuanbaopu.common.utils.LogInfo;
 import com.yuanbaopu.common.utils.MD5;
 import com.yuanbaopu.domain.user.UserDomain;
 import com.yuanbaopu.persistence.user.UserDomainMapper;
@@ -44,6 +45,7 @@ public class UserServiceImpl implements UserService {
 			}
 			userTokenDomain.setToken(userDomain.getUserUuid());
 			userTokenDomain.setUserDomain(userDomain);
+			logger.info(LogInfo.DETAILLOGTPL,"用户登录","成功");
 		} catch (Exception e) {
 			throw new XdgcRException(RespMessageEnum.PASSWORD_NOT_RIGHT);
 		}
